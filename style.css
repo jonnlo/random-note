@@ -1,0 +1,171 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #222222;
+  margin: 2.5rem;
+}
+
+/* Controls styles */
+.controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.control-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.control-group label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.control-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.control-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.control-item input[type="number"],
+.control-item input[type="range"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.toggle input:checked + .slider {
+  background-color: #ff5a5f;
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+.toggle-label {
+  font-size: 1.2rem;
+}
+
+.control-group button {
+  background-color: #ff5a5f;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.control-group button:hover {
+  background-color: #ff4348;
+}
+
+.sharp,
+.flat,
+.mute {
+  margin-right: 1rem;
+}
+
+
+/* Note container styles */
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f4');
+  background-size: cover;
+  background-position: center;
+}
+
+.note {
+  
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  font-size: 10rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
