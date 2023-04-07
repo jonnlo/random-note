@@ -170,23 +170,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  body{
-    font-size:32px;
-  }
-  .controls {
-    flex-direction: column;
-    margin: 0;
-    padding: 1rem;
-  }
-  .control-group {
-    margin-bottom: 0.5rem;
-  }
-  .note-container {
-    height: 10vh;
-  }
-  .note {
-    width: 6rem;
-    height: 6rem;
-    font-size: 6rem;
+  html {
+    font-size: 20px;
   }
 }
